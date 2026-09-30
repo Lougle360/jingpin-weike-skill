@@ -11,7 +11,7 @@
 
 ## 下载安装
 
-去 [Releases](../../releases) 下载 `精品微课skill-<日期>.zip`，解压后得到 `精品微课/` 文件夹，在 AI 客户端里「上传技能」导入。
+去 [Releases](https://github.com/Lougle360/jingpin-weike-skill/releases/latest) 下载 `jingpin-weike-skill-v*.zip`，解压后得到 `精品微课/` 文件夹，在 AI 客户端里「上传技能」导入。
 
 完整步骤看 **[安装使用手册](安装使用手册.md)**，从装 Python 开始一步步写到做出第一门课，面向不懂技术的使用者。
 
