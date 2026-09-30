@@ -1,0 +1,46 @@
+schema_version: '1.0'
+kb_id: shili-kb
+title: 示例知识库（家庭教育格式范本）
+central_question: 这个库准备回答家长的哪一类核心问题
+audiences:
+  - 课程学员
+  - 教研
+  - 内容生产 Agent
+target_tasks:
+  - 检索
+  - 内容稿知识校准
+# included_topics：这个库**管**的范围。min-review 校准时以此判断某条内容是否该被本库裁决。
+included_topics:
+  - 亲子沟通
+  - 情绪管理
+  - 学习习惯
+  - 作业与拖延
+  - 边界与规则
+# excluded_topics：这个库**不管**的范围。落在这里的内容不校准，也不因此拒稿。
+excluded_topics:
+  - 心理疾病诊断与治疗
+  - 药物与医疗建议
+  - 法律纠纷处理
+  - 具体学科提分技巧
+boundary_examples:
+  include:
+    - 怎么给孩子提要求才做得到
+    - 孩子写作业拖延背后的常见成因
+  contextual:
+    - 家长自身的情绪状态对沟通的影响
+  exclude:
+    - 孩子是否患有注意缺陷障碍
+    - 某款网课值不值得买
+domain_profile: education
+risk_profile:
+  level: medium
+  domains:
+    - education
+  jurisdictions: []
+release_policy:
+  unresolved_conflicts_allowed: true
+  professional_approval_required: false
+extensions:
+  notes:
+    - 本文件是格式范本。换成自己的库时，重点改 included_topics 和 excluded_topics，这两项直接决定知识校准的裁决范围。
+    - 涉及疑似心理或医疗问题的内容一律走 14-边界，转介专业机构，不在课里下判断。
